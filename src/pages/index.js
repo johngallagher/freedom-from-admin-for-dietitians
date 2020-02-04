@@ -11,12 +11,9 @@ import GetStarted from "../components/sections/getstarted"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Freedom for admin for dietitians" />
     <Navigation />
     <Header />
-    <Features />
-    <GetStarted />
-    <Footer />
   </Layout>
 )
 

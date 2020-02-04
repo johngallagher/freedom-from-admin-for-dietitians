@@ -27,24 +27,13 @@ const Header = () => {
       <Container>
         <Flex>
           <HeaderTextGroup>
-            <Subtitle>Personal Finance</Subtitle>
+            <Subtitle>Freedom from admin for dietitians</Subtitle>
             <h1>
-              All your money,
+              Join private dietitans
               <br />
-              one account
+              just like you
             </h1>
-            <h2>
-              We're building next generation personal finance tools. Sign up to
-              get early access.
-            </h2>
-            <HeaderForm onSubmit={handleSubmit}>
-              <HeaderInput placeholder="Your email" />
-              <HeaderButton>Early access</HeaderButton>
-            </HeaderForm>
-            <FormSubtitle>
-              Already have a beta account?{" "}
-              <FormSubtitleLink to="/">Sign in</FormSubtitleLink>
-            </FormSubtitle>
+            <HeaderButton to="/something">Click to join</HeaderButton>
           </HeaderTextGroup>
           <ImageWrapper>
             <StyledImage fluid={data.file.childImageSharp.fluid} />
@@ -60,7 +49,7 @@ export default Header
 
 const HeaderWrapper = styled.header`
   background-color: #f8f8f8;
-  padding: 160px 0 80px 0;
+  padding: 200px 0 80px 0;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
   @media (max-width: ${props => props.theme.screen.md}) {
@@ -160,7 +149,7 @@ const HeaderInput = styled.input`
   }
 `
 
-const HeaderButton = styled.button`
+const HeaderButton = styled(Link)`
   font-weight: 500;
   font-size: 14px;
   color: white;
@@ -173,7 +162,9 @@ const HeaderButton = styled.button`
   white-space: nowrap;
   background: ${props => props.theme.color.secondary};
   border-radius: 4px;
-  padding: 0px 40px;
+  padding: 20px 20px 20px 60px;
+  width: 250px;
+
   border-width: 0px;
   border-style: initial;
   border-color: initial;
@@ -187,6 +178,8 @@ const HeaderButton = styled.button`
   @media (max-width: ${props => props.theme.screen.sm}) {
     margin-left: 0;
   }
+
+  text-decoration: none;
 `
 const ImageWrapper = styled.div`
   justify-self: end;

@@ -15,7 +15,7 @@ import {
   ActionsContainer,
 } from "./style"
 
-const NAV_ITEMS = ["Features", "Product", "Pricing", ""]
+const NAV_ITEMS = []
 
 export default class Navigation extends Component {
   state = {
@@ -76,9 +76,6 @@ export default class Navigation extends Component {
         <StyledContainer>
           <Brand>
             <Scrollspy offset={-64} item={["top"]} currentClassName="active">
-              <AnchorLink href="#top" onClick={this.closeMobileMenu}>
-                Finance
-              </AnchorLink>
             </Scrollspy>
           </Brand>
           <Mobile>
@@ -95,9 +92,6 @@ export default class Navigation extends Component {
           </Mobile>
 
           <Mobile hide>{this.getNavList({})}</Mobile>
-          <ActionsContainer>
-            <button>Sign up</button>
-          </ActionsContainer>
         </StyledContainer>
         <Mobile>
           {mobileMenuOpen && (
