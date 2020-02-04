@@ -33,7 +33,7 @@ const Header = () => {
               <br />
               just like you
             </h1>
-            <HeaderButton to="https://www.facebook.com/groups/private.dietitians.who.hate.admin">Click to join</HeaderButton>
+            <HeaderButton href="https://www.facebook.com/groups/private.dietitians.who.hate.admin">Click to join</HeaderButton>
           </HeaderTextGroup>
           <ImageWrapper>
             <StyledImage fluid={data.file.childImageSharp.fluid} />
@@ -149,7 +149,7 @@ const HeaderInput = styled.input`
   }
 `
 
-const HeaderButton = styled(Link)`
+const HeaderButton = styled.a`
   font-weight: 500;
   font-size: 14px;
   color: white;
