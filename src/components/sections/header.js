@@ -33,7 +33,7 @@ const Header = () => {
               <br />
               just like you
             </h1>
-            <HeaderButton to="/something">Click to join</HeaderButton>
+            <HeaderButton to="https://www.facebook.com/groups/private.dietitians.who.hate.admin">Click to join</HeaderButton>
           </HeaderTextGroup>
           <ImageWrapper>
             <StyledImage fluid={data.file.childImageSharp.fluid} />
