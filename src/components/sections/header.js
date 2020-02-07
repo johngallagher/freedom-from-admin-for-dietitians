@@ -27,9 +27,9 @@ const Header = () => {
       <Container>
         <Flex>
           <HeaderTextGroup>
-            <Subtitle>Freedom from admin for dietitians</Subtitle>
+            <Subtitle>Freedom from admin for health entrepreneurs</Subtitle>
             <h1>
-              Join private dietitans
+              Join health entrepreneurs
               <br />
               just like you
             </h1>
