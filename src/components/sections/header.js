@@ -10,7 +10,7 @@ const Header = () => {
     query {
       file(sourceInstanceName: { eq: "product" }, name: { eq: "freedom-from-admin-for-health-entrepreneurs" }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 1100) {
             ...GatsbyImageSharpFluid_tracedSVG
           }
         }
